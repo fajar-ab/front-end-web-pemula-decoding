@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .card-menciut {
+        width: 50%;
+      }
+      @media (max-width: 800px) {
+        .card-menciut {
+          width: 100%;
+        }
+      }
+    </style>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Penambahan User Baru</h1>
+
+      <div class="card mx-auto mb-2 card-menciut">
+        <div class="card-body">
+          <h5 class="card-title text-center">Form User Data</h5>
+          <form id="form-data-user">
+            <div class="form-outline mb-2">
+              <input
+                class="form-control"
+                type="text"
+                name="nama"
+                id="inputNama"
+                value=""
+                maxlength="10"
+              />
+              <label class="form-label" for="nama">Nama User</label>
+            </div>
+            <div class="form-outline mb-2">
+              <input
+                class="form-control"
+                type="number"
+                name="umur"
+                id="inputUmur"
+                value=""
+                maxlength="2"
+              />
+              <label class="form-label" for="umur">Umur User</label>
+            </div>
+
+            <div class="form-outline mb-2">
+              <input
+                class="form-control"
+                type="text"
+                name="domisili"
+                id="inputDomisili"
+                value=""
+                maxlength="10"
+              />
+              <label class="form-label" for="domisili">Domisili User</label>
+            </div>
+            <button class="btn btn-primary btn-block">simpan</button>
+          </form>
+        </div>
+      </div>
+      <div class="card mx-auto card-menciut">
+        <div class="card-body">
+          <h5 class="card-title text-center">Form User Data</h5>
+          <table class="table" id="user-list-table">
+            <thead>
+              <tr>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Domisili</th>
+              </tr>
+            </thead>
+            <tbody id="user-list-detail"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
